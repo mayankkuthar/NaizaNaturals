@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naiza Naturals - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #2d5a27;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .announcement {
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px rgba(255, 154, 158, 0.3);
+        }
+
+        .announcement h2 {
+            color: #d63384;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .announcement p {
+            color: #6f2c91;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .new-date {
+            background: #2d5a27;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            box-shadow: 0 5px 15px rgba(45, 90, 39, 0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 5px 15px rgba(45, 90, 39, 0.3); }
+            to { box-shadow: 0 5px 25px rgba(45, 90, 39, 0.6); }
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            padding: 1.5rem;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            color: #2d5a27;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border-left: 5px solid #2d5a27;
+        }
+
+        .contact-info h3 {
+            color: #2d5a27;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: #2d5a27;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #667eea;
+        }
+
+        .countdown {
+            background: linear-gradient(45deg, #2d5a27, #4a7c59);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🌿 Naiza Naturals</div>
+        <div class="tagline">Pure. Natural. Beautiful.</div>
+        
+        <div class="announcement">
+            <h2>📅 Launch Update</h2>
+            <p>We're putting the finishing touches on our natural products to ensure they meet our highest quality standards!</p>
+            <p><strong>New Launch Date:</strong></p>
+            <div class="new-date">Tuesday, August 19th, 2025</div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🌱</div>
+                <h3>100% Natural</h3>
+                <p>Pure ingredients sourced from nature</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🧴</div>
+                <h3>Premium Quality</h3>
+                <p>Carefully crafted for your wellness</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💚</div>
+                <h3>Eco-Friendly</h3>
+                <p>Sustainable and environmentally conscious</p>
+            </div>
+        </div>
+
+        <div class="countdown" id="countdown">
+            Launch in: Loading...
+        </div>
+
+        <div class="contact-info">
+            <h3>Stay Connected</h3>
+            <p>Follow us for updates and behind-the-scenes content!</p>
+            <div class="social-links">
+                <a href="#" title="Follow us on Instagram">📷</a>
+                <a href="#" title="Like us on Facebook">📘</a>
+                <a href="#" title="Follow us on Twitter">🐦</a>
+                <a href="mailto:info@naizanaturals.com" title="Email us">✉️</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const launchDate = new Date('2025-08-19T00:00:00');
+            const now = new Date();
+            const difference = launchDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('countdown').innerHTML = 
+                    `Launch in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            } else {
+                document.getElementById('countdown').innerHTML = 'We\'re Live! 🎉';
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const features = document.querySelectorAll('.feature');
+            features.forEach((feature, index) => {
+                feature.style.animationDelay = `${index * 0.2}s`;
+                feature.classList.add('fadeInUp');
+            });
+        });
+    </script>
+</body>
+</html>
